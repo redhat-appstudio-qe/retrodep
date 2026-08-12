@@ -8,9 +8,9 @@ metadata:
     pipelinesascode.tekton.dev/cancel-in-progress: "false"
     pipelinesascode.tekton.dev/max-keep-runs: "3"
     pipelinesascode.tekton.dev/on-cel-expression: event == "push" && target_branch
-      == "base-plwvbi"
+      == "base-lsdtkn"
   labels:
-    appstudio.openshift.io/application: application-cmpj
+    appstudio.openshift.io/application: application-zxrf
     appstudio.openshift.io/component: component-prefetch-gomod
     pipelines.appstudio.openshift.io/type: build
   name: component-prefetch-gomod-on-push
@@ -241,7 +241,7 @@ spec:
         - name: name
           value: buildah
         - name: bundle
-          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/buildah@sha256:f821032ebf23f10d72229b00008a1eecfd6bfa01833fde171303b9fffbd4fac3
+          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/buildah@sha256:768c78d7963c6a63545a781556e7fa95bd5608c75af390252b2d7222fb91f302
         - name: kind
           value: task
         resolver: bundles
