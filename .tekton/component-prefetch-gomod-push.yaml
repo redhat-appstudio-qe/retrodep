@@ -8,9 +8,9 @@ metadata:
     pipelinesascode.tekton.dev/cancel-in-progress: "false"
     pipelinesascode.tekton.dev/max-keep-runs: "3"
     pipelinesascode.tekton.dev/on-cel-expression: event == "push" && target_branch
-      == "base-clazgs"
+      == "base-swzruh"
   labels:
-    appstudio.openshift.io/application: application-dzwk
+    appstudio.openshift.io/application: application-wywd
     appstudio.openshift.io/component: component-prefetch-gomod
     pipelines.appstudio.openshift.io/type: build
   name: component-prefetch-gomod-on-push
