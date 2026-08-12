@@ -9,9 +9,9 @@ metadata:
     pipelinesascode.tekton.dev/cancel-in-progress: "true"
     pipelinesascode.tekton.dev/max-keep-runs: "3"
     pipelinesascode.tekton.dev/on-cel-expression: event == "pull_request" && target_branch
-      == "base-xpzopz"
+      == "base-euqjqv"
   labels:
-    appstudio.openshift.io/application: application-olej
+    appstudio.openshift.io/application: application-gntw
     appstudio.openshift.io/component: component-prefetch-gomod
     pipelines.appstudio.openshift.io/type: build
   name: component-prefetch-gomod-on-pull-request
@@ -150,7 +150,7 @@ spec:
         - name: name
           value: init
         - name: bundle
-          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/init@sha256:e2314f3f824b7cc9cf6dbfa6d3dfa4058b4751b88bf8932473ccfe6ec222656a
+          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/init@sha256:0e30ff33f81c077fd214d02c7bd2310381e7eac66b5e4b367db224e0062b110e
         - name: kind
           value: task
         resolver: bundles
