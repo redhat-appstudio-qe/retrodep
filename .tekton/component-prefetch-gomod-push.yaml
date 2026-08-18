@@ -8,9 +8,9 @@ metadata:
     pipelinesascode.tekton.dev/cancel-in-progress: "false"
     pipelinesascode.tekton.dev/max-keep-runs: "3"
     pipelinesascode.tekton.dev/on-cel-expression: event == "push" && target_branch
-      == "base-xpkpkd"
+      == "base-bngxre"
   labels:
-    appstudio.openshift.io/application: application-twtb
+    appstudio.openshift.io/application: application-krfy
     appstudio.openshift.io/component: component-prefetch-gomod
     pipelines.appstudio.openshift.io/type: build
   name: component-prefetch-gomod-on-push
@@ -164,7 +164,7 @@ spec:
         - name: name
           value: git-clone
         - name: bundle
-          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/git-clone@sha256:bfdac50b36547dfbd59a4448037b0b2d7969672471340e483a50fc49fce3a5a9
+          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/git-clone@sha256:4c010ee6e813995e3225075a8848fcbd2c66bd4474e9745434a212b0bc93c0df
         - name: kind
           value: task
         resolver: bundles
@@ -241,7 +241,7 @@ spec:
         - name: name
           value: buildah
         - name: bundle
-          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/buildah@sha256:309b881dabf5af570d2b29db091f26f0ba07e4d3273b3ce8a02146da6fb1eed1
+          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/buildah@sha256:250d67b3d0ede70bf78467b761ab6eeac3cb5f5b2f5b8a0b7afa6186ff8e6973
         - name: kind
           value: task
         resolver: bundles
@@ -266,7 +266,7 @@ spec:
         - name: name
           value: build-image-index
         - name: bundle
-          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/build-image-index@sha256:714a86d454203804fe14e422b4ba8d775d9ec19e5b7922cedd55ef93a3bc9166
+          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/build-image-index@sha256:8a7ea04c20f598df30f6df40cab955b51b709197f5ce691da1d9862136159ccc
         - name: kind
           value: task
         resolver: bundles
