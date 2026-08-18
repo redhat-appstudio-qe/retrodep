@@ -8,9 +8,9 @@ metadata:
     pipelinesascode.tekton.dev/cancel-in-progress: "false"
     pipelinesascode.tekton.dev/max-keep-runs: "3"
     pipelinesascode.tekton.dev/on-cel-expression: event == "push" && target_branch
-      == "base-hebwww"
+      == "base-xpkpkd"
   labels:
-    appstudio.openshift.io/application: application-egza
+    appstudio.openshift.io/application: application-twtb
     appstudio.openshift.io/component: component-prefetch-gomod
     pipelines.appstudio.openshift.io/type: build
   name: component-prefetch-gomod-on-push
@@ -147,7 +147,7 @@ spec:
         - name: name
           value: init
         - name: bundle
-          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/init@sha256:89035a60308af6327a38dc8505e254d724611c8260065cc7d183f9204babdc6b
+          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/init@sha256:4dbbfedc4edb21884fa2ad84521408d2fad090d4d34eb6c555992f8444eba40d
         - name: kind
           value: task
         resolver: bundles
@@ -241,7 +241,7 @@ spec:
         - name: name
           value: buildah
         - name: bundle
-          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/buildah@sha256:4a4237129a4c8c6ba415b17793852a6764479b2657fa3af70a5615c241e3919b
+          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/buildah@sha256:309b881dabf5af570d2b29db091f26f0ba07e4d3273b3ce8a02146da6fb1eed1
         - name: kind
           value: task
         resolver: bundles
@@ -475,7 +475,7 @@ spec:
         - name: name
           value: apply-tags
         - name: bundle
-          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/apply-tags@sha256:c0b47e3f0d4caf900647a901641ea28faa5e0158f022384d631ede31eb1229c0
+          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/apply-tags@sha256:f89a59d4d043fd3c545a9cb5e89b53396f1e04017c6f68da1e50626715c2d423
         - name: kind
           value: task
         resolver: bundles
@@ -496,7 +496,7 @@ spec:
         - name: name
           value: push-dockerfile
         - name: bundle
-          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/push-dockerfile@sha256:58cc2f26f2377c36e0953fcf356ef597903aa348c057232027792ce36585c0bd
+          value: quay.io/redhat-user-workloads/rhtap-build-tenant/konflux-container-build-catalog/push-dockerfile@sha256:1444b6a4fb6b0a0445bc79bfefc793352545b98861e288349904e7a44c623c8d
         - name: kind
           value: task
         resolver: bundles
